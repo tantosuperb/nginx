@@ -1,3 +1,3 @@
 # nginx
 pipeline test
-autotest
+autotesttest
