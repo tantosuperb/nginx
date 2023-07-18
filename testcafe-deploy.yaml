@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <resource_name>
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testcafe-nginx
+  template:
+    metadata:
+      name: testcafe-nginx-pod
+      labels:
+        app: testcafe-nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
