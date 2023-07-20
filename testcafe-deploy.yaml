@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: <resource_name>
+  name: deploy_new_artifact
 spec:
   replicas: 1
   selector:
