@@ -1,5 +1,5 @@
 # nginx최신 stable 버전 컨테이너를 커스텀
-FROM ed5274e0-kr1-registry.container.nhncloud.com/kr1_pipelinie_registry_v2/nginx:latest
+FROM publicdocker1/synginx:pipeline
  
 # 기존 설정파일 삭제
 RUN rm /etc/nginx/conf.d/default.conf
